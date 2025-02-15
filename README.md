@@ -42,6 +42,8 @@ WHERE DATE(p.payment_date) = '2005-07-30'
 ```
 ![alt text](https://github.com/asad-bekov/hw-15/blob/main/img/2.png)
 
+![alt text](https://github.com/asad-bekov/hw-15/blob/main/img/2.1.png)
+
 2. Узкие места
 
 Оператор `DISTINCT` требует сортировки и удаления дубликатов, что может быть дорогостоящим.
@@ -51,8 +53,6 @@ WHERE DATE(p.payment_date) = '2005-07-30'
 Использование функции `DATE()` на столбце `payment_date` не позволяет использовать индекс.
 
 Использование неявных `JOIN` (через `WHERE`) может затруднить оптимизацию запроса.
-
-![alt text](https://github.com/asad-bekov/hw-15/blob/main/img/2.1.png)
 
 3. Оптимизация запроса
 
